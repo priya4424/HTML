@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Second-Hand Vehicle E-Commerce</title>
+  <link rel="stylesheet" href="july.css" />
+</head>
+<body>
+
+  <header>
+    <h1>AutoMarket</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#list">Sell Vehicle</a>
+      <a href="#search">Search</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <!-- User Login/Register -->
+  <section id="login" class="card">
+    <h2>User Login</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Register here</a></p>
+  </section>
+
+  <!-- Vehicle Listing Form -->
+  <section id="list" class="card">
+    <h2>Sell Your Vehicle</h2>
+    <form id="listingForm">
+      <input type="text" placeholder="Make" required />
+      <input type="text" placeholder="Model" required />
+      <input type="number" placeholder="Year" required />
+      <input type="number" placeholder="Price ($)" required />
+      <select required>
+        <option value="">Condition</option>
+        <option value="used">Used</option>
+        <option value="new">New</option>
+      </select>
+      <textarea placeholder="Description" required></textarea>
+      <input type="file" multiple accept="image/*" />
+      <button type="submit">Post Listing</button>
+    </form>
+  </section>
+
+  <!-- Search Vehicles -->
+  <section id="search" class="card">
+    <h2>Search Vehicles</h2>
+    <form id="searchForm">
+      <input type="text" placeholder="Make or Model" />
+      <input type="number" placeholder="Min Price" />
+      <input type="number" placeholder="Max Price" />
+      <input type="number" placeholder="Year" />
+      <select>
+        <option value="">Type</option>
+        <option value="car">Car</option>
+        <option value="motorcycle">Motorcycle</option>
+        <option value="truck">Truck</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div id="searchResults"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 AutoMarket. Powered by AWS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
